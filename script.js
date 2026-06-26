@@ -6,7 +6,11 @@ function startGame(){
   do {
     const rawInput = prompt(`Введи число от 1 до 100. Оставшиеся попытки: ${attempts}`);
 
-    if(rawInput =="" || rawInput == null){
+    if(rawInput === null){
+      alert("Игра завершена");
+      break;
+    }
+    if(rawInput ===""){
       alert("Ошибка! Вы ничего не ввели!");
       continue;
     }
