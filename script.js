@@ -4,7 +4,7 @@ function startGame(){
   let isWin = false;
 
   do {
-    const rawInput = prompt("Введи число от 1 до 100");
+    const rawInput = prompt(`Введи число от 1 до 100. Оставшиеся попытки: ${attempts}`);
 
     if(rawInput =="" || rawInput == null){
       alert("Ошибка! Вы ничего не ввели!");
