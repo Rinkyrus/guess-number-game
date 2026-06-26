@@ -31,7 +31,7 @@ function startGame(){
       break;
     }
 
-    break;
+    if (attempts === 0) { break; }
   } while (true);
 
     if(isWin) {
